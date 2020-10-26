@@ -41,7 +41,7 @@ class Garage {
     }
 
     add(newVehicle) {
-        if (!newVehicle instanceof Vehicle) {
+        if (!(newVehicle instanceof Vehicle)) {
             return 'Space Reserved for Vehicles'
         }
 
